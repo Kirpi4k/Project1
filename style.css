@@ -38,7 +38,7 @@ body{
 }
   
 .nav a{
-    margin: 0 15px;
+    margin: 0 21px;
     text-decoration: none;
     color: rgba(115, 115, 115, 1);
     font-size: 14px;
@@ -47,7 +47,7 @@ body{
   
 .btn{
     background-color: rgba(255, 104, 91, 1);
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -107,7 +107,7 @@ body{
 
 .joinus{
     font-size: 16px;
-    color: rgba(255, 104, 91, 1);;
+    color: rgba(255, 104, 91, 1);
     font-weight: 700;
 }
   
@@ -120,7 +120,48 @@ body{
     height: 757px;
     width: 520.px;
 }
+
+.services{
+    display: grid;
+}
   
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+  
+.card{
+    padding: 35px 40px;
+    box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+}
+  
+.card-icon img{
+    width: 72px;
+    height: 72px;
+}
+
+.line{
+    background-color: rgba(255, 104, 91, 1);
+    width: 50px;
+    height: 2px;
+}
+  
+.card h3{
+    font-size: 16px;
+    color: rgba(37, 43, 66, 1);
+    font-weight: 700;
+}
+  
+.card p{
+    color: rgba(115, 115, 115, 1);
+    margin-right: 40px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
 @media (max-width: 768px) {
     .header-container {
       flex-direction: column;
@@ -147,5 +188,31 @@ body{
   
     .hero-text p {
       font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+      flex: 1 1 45%;
+    }
+  }
+  
+@media (max-width: 600px) {
+    .card {
+      flex: 1 1 100%;
+    }
+  
+    .services-header h2 {
+      font-size: 28px;
+    }
+  
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .btn {
+      width: 100%;
+      text-align: center;
     }
 }
