@@ -7,9 +7,8 @@ body{
     font-family: Mont;
     line-height: 1.6;
     background-color: rgba(255, 255, 255, 1);
-    color: #333;
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 100%;
     padding: 0;
 }
   
@@ -20,9 +19,9 @@ body{
 }
   
 .header{
-    background-color: rgba(255, 255, 255, 1);
-    padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    background-color: rgba(250, 250, 250, 1);
+    padding: 16px;
+    padding-bottom: 16px;
 }
   
 .header-container{
@@ -47,8 +46,8 @@ body{
   
 .btn{
     background-color: rgba(255, 104, 91, 1);
-    color: rgba(255, 255, 255, 1);
-    padding: 10px 20px;
+    color: rgba(250, 250, 250, 1);
+    padding: 15px 40px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 14px;
@@ -56,8 +55,18 @@ body{
 }
   
 .btn1{
-    background-color: white;
+    background-color: rgba(250, 250, 250, 1);
     border: 1px solid rgba(255, 104, 91, 1);
+    color: rgba(255, 104, 91, 1);
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn2{
+    background-color: rgba(250, 250, 250, 1);
     color: rgba(255, 104, 91, 1);
     padding: 10px 20px;
     text-decoration: none;
@@ -66,10 +75,10 @@ body{
     font-weight: 700;
 }
 
-.btn2{
-    background-color: white;
-    color: rgba(255, 104, 91, 1);
-    padding: 10px 20px;
+.btn3{
+    background-color: rgba(255, 104, 91, 1);
+    color: rgba(250, 250, 250, 1);
+    padding: 15px 25px;
     text-decoration: none;
     border-radius: 5px;
     font-size: 14px;
@@ -77,7 +86,9 @@ body{
 }
   
 .hero{
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(250, 250, 250, 1);
+    max-width: 100%;
+    max-height: 1037px;
 }
   
 .hero-content{
@@ -93,14 +104,16 @@ body{
   
 .hero-text h1{
     font-size: 58px;
-    margin-bottom: 35px;
+    margin: 0;
     color: rgba(37, 43, 66, 1);
     font-weight: 700;
 }
   
 .maintext{
     font-size: 20px;
-    margin-bottom: 30px;
+    margin: 0;
+    margin-top: 35px;
+    margin-bottom: 35px;
     color: rgba(115, 115, 115, 1);
     font-weight: 400;
 }
@@ -108,6 +121,8 @@ body{
 .joinus{
     font-size: 16px;
     color: rgba(255, 104, 91, 1);
+    margin: 0;
+    margin-bottom: 35px;
     font-weight: 700;
 }
   
@@ -135,6 +150,7 @@ body{
   
 .card{
     padding: 35px 40px;
+    background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
 }
   
@@ -160,6 +176,108 @@ body{
     margin-right: 40px;
     font-size: 14px;
     font-weight: 400;
+}
+ 
+.statistics{
+    margin-top: 80px;
+}
+
+.stats-wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 30px;
+}
+  
+.stat-item h2{
+    font-size: 58px;
+    color: rgba(255, 104, 91, 1);
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: 700;
+}
+  
+.stat-item p{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: rgba(37, 43, 66, 1);
+}
+  
+.experts{
+    background-color: #fff;
+}
+  
+.experts-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 160px;
+}
+  
+.experts-text{
+    flex: 1;
+    min-width: 507px;
+    min-height: 246px;
+}
+  
+.red-line{
+    display: block;
+    width: 94px;
+    height: 7px;
+    background-color: rgba(255, 104, 91, 1);
+}
+  
+.experts-text h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 35px;
+    color: rgba(37, 43, 66, 1);
+}
+  
+.experts-text p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(115, 115, 115, 1);
+    margin: 0;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    max-width: 400px;
+}
+  
+.learn-more{
+    color: rgba(255, 104, 91, 1);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.experts-image{
+    flex: 1;
+    text-align: center;
+    min-width: 280px;
+}
+  
+.experts-image img{
+    max-width: 100%;
+    height: auto;
+}
+  
+@media (max-width: 768px) {
+    .experts-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .experts-text,
+    .experts-image {
+      text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
