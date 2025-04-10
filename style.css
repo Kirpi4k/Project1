@@ -148,7 +148,7 @@ body{
     gap: 30px;
 }
   
-.card{
+.card1{
     padding: 35px 40px;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
@@ -177,10 +177,6 @@ body{
     font-size: 14px;
     font-weight: 400;
 }
- 
-.statistics{
-    margin-top: 80px;
-}
 
 .stats-wrapper{
     display: flex;
@@ -188,6 +184,8 @@ body{
     flex-wrap: wrap;
     text-align: center;
     gap: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
   
 .stat-item h2{
@@ -207,7 +205,7 @@ body{
 }
   
 .experts{
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
 }
   
 .experts-wrapper{
@@ -216,7 +214,8 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 40px;
-    margin-top: 160px;
+    padding-top: 160px;
+    padding-bottom: 160px;
 }
   
 .experts-text{
@@ -267,6 +266,178 @@ body{
     max-width: 100%;
     height: auto;
 }
+
+.department{
+    background-color: #e8f9fb;
+    padding: 160px 0;
+}
+  
+.department-header{
+    text-align: start;
+    margin-bottom: 50px;
+}
+  
+.department-header .subtitle{
+    color: rgba(255, 104, 91, 1);
+    font-weight: 700;
+    font-size: 14px;
+}
+  
+.department-header h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 10px 0;
+    color: rgba(37, 43, 66, 1);
+}
+  
+.department-header p{
+    color: rgba(115, 115, 115, 1);
+    font-size: 14px;
+    font-weight: 400;
+}
+  
+.cards-wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+  
+.card{
+    background: #fff;
+    width: 348px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+  
+.card-image{
+    position: relative;
+    height: 300px;
+}
+  
+.card-image img{
+    width: 100%;
+    display: block;
+}
+  
+.sale-badge{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(231, 64, 64, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+  
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -40px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -20px;
+}
+  
+.icon-img{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 44px;
+}
+  
+.card-content{
+    padding: 25px;
+    padding-bottom: 35px;
+    text-align: left;
+    position: relative;
+}
+  
+.tag{
+    color: rgba(255, 104, 91, 1);
+    font-weight: 700;
+    font-size: 14px;
+}
+  
+.rating{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    top: 20px;
+    right: 20px;
+    background: rgba(38, 51, 93, 1);
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+  
+.icon-star{
+    width: 15px;
+    height: 15px;
+}
+  
+.card-content h3{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px 0 10px;
+    color: rgba(37, 43, 66, 1);
+}
+  
+.card-content p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(115, 115, 115, 1);
+    margin-bottom: 15px;
+}
+  
+.price{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+  
+.old-price{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(189, 189, 189, 1);
+    margin-right: 8px;
+}
+  
+.new-price{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(90, 172, 168, 1);
+}
+  
+.learn-more{
+    display: inline-block;
+    color: #f44336;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+
+  
+@media (max-width: 768px) {
+    .cards-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+}
+  
   
 @media (max-width: 768px) {
     .experts-wrapper {
