@@ -296,6 +296,9 @@ body{
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 104, 91, 1);
+    border-radius: 37px;
 }
 
 .experts-image{
@@ -316,7 +319,7 @@ body{
   
 .department-header{
     text-align: start;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
   
 .department-header .subtitle{
@@ -328,7 +331,9 @@ body{
 .department-header h2{
     font-size: 40px;
     font-weight: 700;
-    margin: 10px 0;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: rgba(37, 43, 66, 1);
 }
   
@@ -336,6 +341,7 @@ body{
     color: rgba(115, 115, 115, 1);
     font-size: 14px;
     font-weight: 400;
+    margin: 0;
 }
   
 .cards-wrapper{
@@ -471,89 +477,183 @@ body{
     margin-top: 10px;
 }
 
-.testimonial-section {
+.testimonial-section{
     padding-top: 160px;
     padding-bottom: 160px;
     text-align: start;
-  }
+}
   
-  .section-subtitle {
+.section-subtitle{
     color: rgba(255, 104, 91, 1);
     font-weight: 700;
     font-size: 14px;
-  }
+    margin: 0;
+    margin-bottom: 10px;
+}
   
-  .section-title {
+.section-title{
     font-size: 40px;
     font-weight: 700;
-    margin: 10px 0;
+    margin: 0;
+    margin-bottom: 10px;
     color: rgba(37, 43, 66, 1);
-  }
+}
   
-  .section-desc {
+.section-desc{
     color: rgba(115, 115, 115, 1);
-    margin-bottom: 60px;
+    margin: 0;
     font-size: 14px;
     font-weight: 400;
-  }
+}
   
-  .testimonial-cards {
+.testimonial-cards{
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-  }
+    padding-top: 80px;
+}
   
-  .testimonial-card {
+.testimonial-card{
     background: rgba(255, 255, 255, 1);
     padding: 30px;
     max-width: 300px;
     text-align: center;
-  }
+}
   
-  .stars img {
+.stars img{
     width: 22px;
     height: 22px;
-  }
+}
   
-  .testimonial-text {
+.testimonial-text{
     margin: 15px 70px 30px;
     color: rgba(115, 115, 115, 1);
     font-size: 14px;
     font-weight: 400;
-  }
+}
   
-  .author {
+.author{
     display: flex;
     align-items: center;
     gap: 15px;
     justify-content: center;
-  }
+}
   
-  .author img {
+.author img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
-  }
+}
   
-  .author-info {
+.author-info{
     text-align: left;
     display: flex;
     flex-direction: column;
-  }
+}
   
-  .name {
+.name{
     font-weight: 700;
     font-size: 14px;
     color: rgba(255, 104, 91, 1);
-  }
+}
   
-  .role {
+.role{
     font-size: 12px;
     font-weight: 400;
     color: rgba(37, 43, 66, 1);
-  }
+}
 
+.team{
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+  
+.containerr{
+    max-width: 1150px;
+    margin: auto;
+    padding-top: 112px;
+    padding-bottom: 112px;
+}
+  
+.teamsubtitle{
+    color: rgba(255, 104, 91, 1);
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: start;
+}
+  
+.teamtitle{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(37, 43, 66, 1);
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: start;
+}
+  
+.teamdesc{
+    max-width: 400px;
+    margin: 0;
+    margin-bottom: 112px;
+    color: rgba(115, 115, 115, 1);
+    font-size: 14px;
+    text-align: start;
+}
+  
+.teamcards{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+.teamcard{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+    width: 25%; 
+}
+  
+.teamimage{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+  
+.teaminfo{
+    padding: 30px 52.5px;
+}
+  
+.teamname{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(37, 43, 66, 1);
+    margin: 0;
+    margin-bottom: 10px;
+}
+  
+.teamprofession{
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(115, 115, 115, 1);
+    margin: 0;
+    margin-bottom: 10px;
+}
+  
+.teamsocials a{
+    margin: 0 10px;
+    display: inline-block;
+}
+  
+.teamsocials img{
+    width: 24px;
+    height: 24px;
+}
   
 @media (max-width: 768px) {
     .cards-wrapper {
