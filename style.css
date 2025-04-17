@@ -7,20 +7,12 @@
     src: url(Fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
-.html{
-    width: 100%;
-    max-width: 1150px;
-    margin:0 auto;
-    overflow-x: hidden;
-}
-
 body{
     font-family: Mont;
     line-height: 1.6;
     background-color: rgba(255, 255, 255, 1);
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
   
 .container{
@@ -28,6 +20,7 @@ body{
     max-width: 1150px;
     margin:0 auto;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .containerr{
@@ -35,6 +28,7 @@ body{
     max-width: 1150px;
     margin:0 auto;
     overflow-x: hidden;
+    overflow-y: hidden;
     padding-top: 112px;
     padding-bottom: 112px;
 }
@@ -820,7 +814,13 @@ body{
     padding-right: 32px;
 }
 
+.header{
+    padding-left: 32px;
+    padding-right: 32px;
+}   
+
 .header-container{
+    padding: 0;
     flex-direction: row;
     align-items: center;
     text-align: center;
@@ -838,6 +838,7 @@ body{
     padding-top: 0;
     flex-direction: row;
     align-items: start;
+    padding-bottom: 0;
 }
 
 .btn2{
@@ -869,6 +870,7 @@ body{
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 30px;
+    margin-right: 150px;
 }
   
 .buttons{
@@ -893,33 +895,69 @@ body{
 }
 
 .doctor-img{
-    width: 100%;
+    width: 90%;
     height: auto;
-    display: block;
+    object-fit: cover;
 }
 
 .right-image-wrapper{
-    flex: 460px;
+    flex:1 1 10%;
     position: relative;
 }
 
 .cards-on-image{
+    display: none;
     flex-direction: row;
+    left: 150px;
     bottom: -150px;
-    transform: translateX(0);
 }
 
+.card{
+    width: 33%;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.card .icon{
+    width: 35px;
+    height: 35px;
+    margin: 0;
+}
+  
+.card h3{
+    font-size: 15px;
+    text-align: center;
+    margin-left: 0;
+}
+  
+.line{
+    display: none;
+}
 
+.card p{
+    display: none;
+}
 
-
-
-
-
-
-
-
-
+.stats-wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 30px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+  
+.stat-item h2{
+    font-size: 42px;
+}
+  
+.stat-item p{
+    font-size: 15px;
+}
 
 .experts-wrapper{
     flex-direction: column;
@@ -927,72 +965,68 @@ body{
     text-align: center;
 }
 
+.experts-text{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.experts-text h2{
+    font-size: 32px;
+}
+  
+.experts-text p{
+    font-size: 13px;
+}
+  
+.learn-more{
+    font-size: 13px;
+    padding: 5px 15px;
+    border: 1px solid rgba(255, 104, 91, 1);
+    border-radius: 37px;
+}
+
+.experts-image{
+    flex: 1;
+    text-align: center;
+    min-width: 280px;
+}
+  
+.experts-image img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
 .cards-wrapper{
-          flex-direction: row;
-          align-items: center;
-          text-align: center;
-        }
-        .primary-btn{
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-          }
-            
-            .secondary-btn{
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-              }
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
 
-              .testimonial-cards {
-                  flex-direction: column;
-                  align-items: center;
-                  text-align: center;
-                }
-
-
-        
+.testimonial-cards{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
   
-    .nav a {
-      margin: 10px;
-    }
+.department-header{
+    text-align: center;
+}
   
-    .left-text {
-      margin-top: 40px;
-      text-align: left;
-    }
+.teamdesc{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
   
-    .right-image-wrapper {
-      margin-top: 40px;
-    }
-  
-    .cards-on-image {
-        display: none;
-      flex-direction: row;
-      bottom: -150px;
-      transform: translateX(0);
-    }
-  
-    .card {
-      width: 90%;
-      margin-bottom: 30px;
-    }
-  
-    .department-header {
-      text-align: center;
-    }
-  
-    .experts-text {
-      text-align: center;
-    }
-  
-    .teamdesc {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  
-    .testimonial-text {
-      margin: 15px 0 30px;
-    }
-  }
+.testimonial-text{
+    margin: 15px 0 30px;
+}
+}
