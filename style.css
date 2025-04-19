@@ -174,9 +174,10 @@ body{
 }
   
 .doctor-img{
+    display: block;
+    margin: 0 auto;
     width: 100%;
     height: auto;
-    display: block;
 }
   
 .cards-on-image{
@@ -481,7 +482,7 @@ body{
 .learn-more{
     display: inline-block;
     color: rgba(255, 104, 91, 1);
-    font-weight: bold;
+    font-weight: 700;
     text-decoration: none;
     font-size: 14px;
     margin-top: 10px;
@@ -647,6 +648,12 @@ body{
     margin: 0;
     margin-bottom: 10px;
 }
+
+.teamsocials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   
 .teamsocials a{
     margin: 0 10px;
@@ -783,13 +790,13 @@ body{
     align-items: center;
     flex-wrap: wrap;
     font-size: 14px;
-    color: #1d2c3c;
+    color: rgba(115, 115, 115, 1);
 }
   
   .footersocials a{
     margin-left: 15px;
     font-size: 18px;
-    color: #f64a4a;
+    color: rgba(255, 104, 91, 1);
     text-decoration: none;
 }
 
@@ -800,12 +807,21 @@ body{
 }
 
 
+
+
+
+
+
+
+
 @media (max-width: 1024px) {
 
 .containerr{
     padding:0;
     padding-left: 32px;
     padding-right: 32px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
     
 .container{
@@ -868,9 +884,8 @@ body{
   
 .left-text p{
     font-size: 18px;
-    font-weight: 400;
     margin-bottom: 30px;
-    margin-right: 150px;
+    margin-right: 50px;
 }
   
 .buttons{
@@ -895,14 +910,12 @@ body{
 }
 
 .doctor-img{
-    width: 90%;
-    height: auto;
-    object-fit: cover;
+    max-width: 400px;
+    min-width: 280px;
 }
 
 .right-image-wrapper{
     flex:1 1 10%;
-    position: relative;
 }
 
 .cards-on-image{
@@ -991,6 +1004,7 @@ body{
     flex: 1;
     text-align: center;
     min-width: 280px;
+    max-width: 400px;
 }
   
 .experts-image img{
@@ -998,35 +1012,259 @@ body{
     height: auto;
 }
 
-
-
-
-
-
+.department-header{
+    text-align: center;
+}
 
 .cards-wrapper{
     flex-direction: row;
     align-items: center;
     text-align: center;
+    gap: 20px;
+}
+  
+.card{
+    width: 300px;
+}
+  
+.card-image{
+    position: relative;
+    height: 258px;
+}
+  
+.card-image img{
+    width: 100%;
+    display: block;
+}
+  
+.sale-badge{
+    top: 10px;
+    left: 10px;
+    font-size: 13px;
+}
+  
+.icons{
+    gap: 10px;
+    margin-top: -20px;
+    top: -20px;
+}
+  
+.icon-img{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 22px;
+}
+  
+.card-content{
+    min-width: 300px;
+    padding: 15px;
+    padding-bottom: 20px;
+}
+  
+.tag{
+    font-size: 13px;
+}
+  
+.rating{
+    gap: 5px;
+    top: 20px;
+    right: 20px;
+    font-size: 11px;
+}
+  
+.icon-star{
+    width: 15px;
+    height: 15px;
+}
+  
+.card-content h3{
+    text-align: left;
+    font-size: 15px;
+    margin: 10px 0 10px;
+}
+  
+.price{
+    font-size: 13px;
+}
+  
+.old-price{
+    font-size: 15px;
+}
+  
+.new-price{
+    font-size: 15px;
+}
+  
+.learn-more{
+    font-size: 13px;
 }
 
 .testimonial-cards{
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
 }
+
+.section-subtitle{
+    font-size: 13px;
+}
   
-.department-header{
+.section-title{
+    font-size: 32px;
+}
+  
+.section-desc{
+    font-size: 13px;
+}
+  
+.testimonial-cards{
+    gap: 20px;
+}
+  
+.testimonial-card{
+    max-width: 300px;
     text-align: center;
 }
   
-.teamdesc{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+.stars img{
+    width: 20px;
+    height: 20px;
 }
   
 .testimonial-text{
-    margin: 15px 0 30px;
+    font-size: 13px;
+    margin: 15px 25px 30px;
+}
+  
+.author img{
+    width: 30px;
+    height: 30px;
+    border-radius: 22px;
+}
+  
+.name{
+    font-size: 13px;
+}
+  
+.role{
+    font-size: 11px;
+}
+  
+.teamsubtitle{
+    font-size: 13px;
+}
+  
+.teamtitle{
+    font-size: 32px;
+}
+  
+.teamdesc{
+    font-size: 13px;
+    margin-bottom: 80px;
+}
+  
+.teamcards{
+    gap: 20px;
+}
+  
+.teamcard{
+    border-radius: 10px;
+    box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
+    width: 25%; 
+}
+  
+.teamimage{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+  
+.teaminfo{
+    padding: 20px 30px;
+}
+  
+.teamname{
+    font-size: 15px;
+}
+  
+.teamprofession{
+    font-size: 11px;
+}
+  
+.teamsocials a{
+    margin: 0 10px;
+    display: inline-block;
+}
+  
+.teamsocials img{
+    width: 20px;
+    height: 20px;
+}
+
+.subscribe{
+    padding: 160px 0;
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+  
+.subscribesubtitle{
+    font-size: 13px;
+}
+  
+.subscribetitle{
+    font-size: 32px;
+}
+  
+.subscribetext{
+    font-size: 13px;
+}
+  
+.subscribeform{
+    max-width: 500px;
+}
+  
+.subscribeinput{
+    padding: 10px 15px;
+    font-size: 13px;
+}
+  
+.subscribebutton{
+    padding: 10px 17px;
+    font-size: 13px;
+}
+  
+.footercolumns{
+    flex-wrap: wrap;
+    gap: 70px;
+    row-gap: 40px;
+}
+  
+.footercolumn{
+    max-width: auto;
+    min-width: 148px;
+    flex: 1;
+}
+  
+.footertitle{
+    font-size: 15px;
+}
+
+.footerlist li{
+    font-size: 13px;
+}
+  
+.footercontacts li{
+    font-size: 13px;
+}
+  
+.footerbottom{
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content: space-between;
+    font-size: 13px;
+}
+  
+  .footersocials a{
+    font-size: 16px;
 }
 }
