@@ -57,6 +57,11 @@ body{
     color: rgba(115, 115, 115, 1);
     font-size: 14px;
     font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover{
+    color: rgba(37, 43, 66, 1);
 }
   
 .btn{
@@ -88,6 +93,7 @@ body{
     border-radius: 5px;
     font-size: 14px;
     font-weight: 700;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn3{
@@ -98,6 +104,17 @@ body{
     border-radius: 5px;
     font-size: 14px;
     font-weight: 700;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn3:hover{
+    background-color: rgba(220, 50, 40, 1);
+    color:  rgba(250, 250, 250, 1);
+}
+  
+.btn2:hover{
+    background-color: rgba(255, 104, 91, 1);
+    color:  rgba(250, 250, 250, 1);
 }
   
 .hero-section{
@@ -154,6 +171,7 @@ body{
     font-weight: 700;
     font-size: 14px;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
   
 .primary-btn{
@@ -166,6 +184,16 @@ body{
     background-color: rgba(250, 250, 250, 1);
     color: rgba(255, 104, 91, 1);
     border: 1px solid rgba(255, 104, 91, 1);
+}
+
+.primary-btn:hover{
+    background-color: rgba(220, 50, 40, 1);
+    color:  rgba(250, 250, 250, 1);
+}
+  
+.secondary-btn:hover{
+    background-color: rgba(255, 104, 91, 1);
+    color:  rgba(250, 250, 250, 1);
 }
   
 .right-image-wrapper{
@@ -310,7 +338,13 @@ body{
     padding: 10px 20px;
     border: 1px solid rgba(255, 104, 91, 1);
     border-radius: 37px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.learn-more:hover {
+    background-color: rgba(255, 104, 91, 1);
+    color:  rgba(255, 255, 255, 1);;
+  }
 
 .experts-image{
     flex: 1;
@@ -720,7 +754,13 @@ body{
     cursor: pointer;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.subscribebutton:hover {
+    background-color: rgba(220, 50, 40, 1);
+    color:  rgba(255, 255, 255, 1);
+  }
 
 .footer{
     background-color: rgba(255, 255, 255, 1);
@@ -1277,7 +1317,7 @@ body{
     font-size: 13px;
 }
   
-  .footersocials a{
+.footersocials a{
     font-size: 16px;
 }
 }
@@ -1289,455 +1329,456 @@ body{
 
 @media (max-width: 767px) {
 
-    .containerr{
-        padding:0;
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
+.containerr{
+    padding:0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
         
-    .container{
-        padding:0;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+.container{
+    padding:0;
+    padding-left: 16px;
+    padding-right: 16px;
+}
     
-    .header{
-        padding-left: 16px;
-        padding-right: 16px;
-    }   
+.header{
+    padding-left: 16px;
+    padding-right: 16px;
+}   
     
-    .header-container{
-        padding: 0;
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-    }    
+.header-container{
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}    
     
-    .logo{
-        font-size: 16px
-    }
+.logo{
+    font-size: 16px
+}
     
-    .nav a{
-        display: none;
-    }
+.nav a{
+    display: none;
+}
     
-    .top-content{
-        padding-top: 0;
-        flex-direction: row;
-        align-items: start;
-        padding-bottom: 0;
-    }
+.top-content{
+    padding-top: 0;
+    flex-direction: row;
+    align-items: start;
+    padding-bottom: 0;
+}
     
-    .btn2{
-        padding: 5px 10px;
-        font-size: 12px;
-    }
+.btn2{
+    padding: 5px 10px;
+    font-size: 12px;
+}
     
-    .btn3{
-        padding: 5px 10px;
-        font-size: 12px;
-    }
+.btn3{
+    padding: 5px 10px;
+    font-size: 12px;
+}
     
-    .left-text .label{
-        font-size: 14px;
-    }
+.left-text .label{
+    font-size: 14px;
+}
       
-    .left-text h1{
-        font-size: 32px;
-        margin: 10px 0 10px;
-        margin-right: 50px;
-    }
+.left-text h1{
+    font-size: 32px;
+    margin: 10px 0 10px;
+    margin-right: 50px;
+}
       
-    .left-text p{
-        font-size: 16px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-right: 50px;
-    }
+.left-text p{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
       
-    .buttons{
-        display: row;
-        justify-content: start;
-    }
+.buttons{
+    display: row;
+    justify-content: start;
+}
     
-    .primary-btn{
-        padding: 5px 10px;
-        font-size: 12px;
-        cursor: pointer;
-    }
+.primary-btn{
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
     
-    .secondary-btn{
-        padding: 5px 10px;
-        font-size: 12px;
-        cursor: pointer;
-    }
+.secondary-btn{
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
     
-    .doctor-img{
-        max-width: 300px;
-        min-width: 200px;
-    }
+.doctor-img{
+    max-width: 300px;
+    min-width: 200px;
+}
     
-    .right-image-wrapper{
-        top: 50px;
-        flex: 1 1 1 1 auto;
-        margin: 0;
-    }
+.right-image-wrapper{
+    top: 50px;
+    flex: 1 1 1 1 auto;
+    margin: 0;
+}
     
-    .cards-on-image{
-        display: none;
-        flex-direction: row;
-        left: 150px;
-        bottom: -150px;
-    }
+.cards-on-image{
+    display: none;
+    flex-direction: row;
+    left: 150px;
+    bottom: -150px;
+}
     
-    .card{
-        display: none;
-        width: 33%;
-        height: auto;
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.card{
+    display: none;
+    width: 33%;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
     
-    .card .icon{
-        display: none;
-        width: 35px;
-        height: 35px;
-        margin: 0;
-    }
+.card .icon{
+    display: none;
+    width: 35px;
+    height: 35px;
+    margin: 0;
+}
       
-    .card h3{
-        display: none;
-        font-size: 15px;
-        text-align: center;
-        margin-left: 0;
-    }
+.card h3{
+    display: none;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 0;
+}
       
-    .line{
-        display: none;
-    }
+.line{
+    display: none;
+}
     
-    .card p{
-        display: none;
-    }
+.card p{
+    display: none;
+}
     
-    .stats-wrapper{
-        gap: 20px;
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
+.stats-wrapper{
+    gap: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
       
-    .stat-item h2{
-        font-size: 32px;
-    }
+.stat-item h2{
+    font-size: 32px;
+}
       
-    .stat-item p{
-        font-size: 14px;
-    }
+.stat-item p{
+    font-size: 14px;
+}
     
-    .experts-wrapper{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+.experts-wrapper{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
     
-    .experts-text{
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.experts-text{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
       
-    .experts-text h2{
-        font-size: 28px;
-    }
+.experts-text h2{
+    font-size: 28px;
+}
       
-    .experts-text p{
-        font-size: 12px;
-    }
+.experts-text p{
+    font-size: 12px;
+}
       
-    .learn-more{
-        font-size: 12px;
-        padding: 5px 10px;
-    }
+.learn-more{
+    font-size: 12px;
+    padding: 5px 10px;
+}
     
-    .experts-image{
-        flex: 1;
-        text-align: center;
-        min-width: 200px;
-        max-width: 300px;
-    }
+.experts-image{
+    flex: 1;
+    text-align: center;
+    min-width: 200px;
+    max-width: 300px;
+}
       
-    .experts-image img{
-        max-width: 100%;
-        height: auto;
-    }
+.experts-image img{
+    max-width: 100%;
+    height: auto;
+}
 
-    .department{
-        padding: 80px 0;
-    }
+.department{
+    padding: 80px 0;
+}
     
-    .department-header{
-        text-align: center;
-    }
+.department-header{
+    text-align: center;
+}
 
-    .department-header .subtitle{
-        font-size: 12px;
-    }
+.department-header .subtitle{
+    font-size: 12px;
+}
       
-    .department-header h2{
-        font-size: 28px;
-    }
+.department-header h2{
+    font-size: 28px;
+}
       
-    .department-header p{
-        font-size: 12px;
-    }
+.department-header p{
+    font-size: 12px;
+}
     
-    .cards-wrapper{
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-        gap: 10px;
+.cards-wrapper{
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+      
+.card{
+    width: 33%;
     }
       
-    .card{
-        width: 33%;
+.card-image{
+    position: relative;
+    height: auto;
+    width: 100%;
     }
       
-    .card-image{
-        position: relative;
-        height: auto;
-        width: 100%;
-    }
+.card-image img{
+    width: 100%;
+    display: block;
+}
       
-    .card-image img{
-        width: 100%;
-        display: block;
-    }
+.sale-badge{
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+}
       
-    .sale-badge{
-        top: 10px;
-        left: 10px;
-        font-size: 12px;
-    }
+.icons{
+    gap: 10px;
+    margin-top: -20px;
+    top: -20px;
+}
       
-    .icons{
-        gap: 10px;
-        margin-top: -20px;
-        top: -20px;
-    }
+.icon-img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
       
-    .icon-img{
-        width: 35px;
-        height: 35px;
-        border-radius: 100%;
-    }
+.card-content{
+    min-width: 100%;
+}
       
-    .card-content{
-        min-width: 100%;
-    }
+.tag{
+    font-size: 12px;
+}
       
-    .tag{
-        font-size: 12px;
-    }
+.rating{
+    font-size: 10px;
+}
       
-    .rating{
-        font-size: 10px;
-    }
+.icon-star{
+    width: 10px;
+    height: 10px;
+}
       
-    .icon-star{
-        width: 10px;
-        height: 10px;
-    }
+.card-content h3{
+    font-size: 14px;
+}
       
-    .card-content h3{
-        font-size: 14px;
-    }
+.price{
+    font-size: 12px;
+}
       
-    .price{
-        font-size: 12px;
-    }
+.old-price{
+    font-size: 14px;
+}
       
-    .old-price{
-        font-size: 14px;
-    }
+.new-price{
+    font-size: 14px;
+}
       
-    .new-price{
-        font-size: 14px;
-    }
-      
-    .learn-more{
-        font-size: 12px;
-    }
+.learn-more{
+    font-size: 12px;
+}
 
-    .testimonial-section{
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
+.testimonial-section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 
-    .testimonial-cards{
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-    }
+.testimonial-cards{
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
     
-    .section-subtitle{
-        font-size: 12px;
-    }
+.section-subtitle{
+    font-size: 12px;
+}
       
-    .section-title{
-        font-size: 28px;
-    }
+.section-title{
+    font-size: 28px;
+}
       
-    .section-desc{
-        font-size: 12px;
-    }
+.section-desc{
+    font-size: 12px;
+}
       
-    .testimonial-cards{
-        gap: 10px;
-    }
+.testimonial-cards{
+    gap: 10px;
+}
       
-    .testimonial-card{
-        max-width: 33%;
-        text-align: center;
-    }
+.testimonial-card{
+    max-width: 33%;
+    text-align: center;
+}
       
-    .stars img{
-        width: 15px;
-        height: 15px;
-    }
+.stars img{
+    width: 15px;
+    height: 15px;
+}
       
-    .testimonial-text{
-        font-size: 12px;
-    }
+.testimonial-text{
+    font-size: 12px;
+}
       
-    .author img{
-        width: 20px;
-        height: 20px;
-    }
+.author img{
+    width: 20px;
+    height: 20px;
+}
       
-    .name{
-        font-size: 12px;
-    }
+.name{
+    font-size: 12px;
+}
       
-    .role{
-        font-size: 10px;
-    }
+.role{
+    font-size: 10px;
+}
       
-    .teamsubtitle{
-        font-size: 11px;
-    }
+.teamsubtitle{
+    font-size: 11px;
+}
       
-    .teamtitle{
-        font-size: 28px;
-    }
+.teamtitle{
+    font-size: 28px;
+}
       
-    .teamdesc{
-        font-size: 12px;
-        margin-bottom: 40px;
-    }
+.teamdesc{
+    font-size: 12px;
+    margin-bottom: 40px;
+}
       
-    .teamcards{
-        flex-wrap: wrap;
-        gap: 20px;
-    }
+.teamcards{
+    flex-wrap: wrap;
+    gap: 20px;
+}
       
-    .teamcard{
-        width: 39%; 
-    }
+.teamcard{
+    width: 35%; 
+}
       
-    .teamimage{
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-    }
+.teamimage{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
       
-    .teaminfo{
-        padding: 20px 30px;
-    }
+.teaminfo{
+    padding: 20px 30px;
+}
       
-    .teamname{
-        font-size: 14px;
-    }
+.teamname{
+    font-size: 14px;
+}
       
-    .teamprofession{
-        font-size: 10px;
-    }
+.teamprofession{
+    font-size: 10px;
+}
       
-    .teamsocials a{
-        margin: 0 10px;
-        display: inline-block;
-    }
+.teamsocials a{
+    margin: 0 10px;
+    display: inline-block;
+}
       
-    .teamsocials img{
-        width: 15px;
-        height: 15px;
-    }
+.teamsocials img{
+    width: 15px;
+    height: 15px;
+}
     
-    .subscribe{
-        padding: 80px 0;
-    }
+.subscribe{
+    padding: 80px 0;
+}
       
-    .subscribesubtitle{
-        font-size: 12px;
-    }
+.subscribesubtitle{
+    font-size: 12px;
+}
       
-    .subscribetitle{
-        font-size: 28px;
-    }
+.subscribetitle{
+     font-size: 28px;
+}
       
-    .subscribetext{
-        font-size: 12px;
-    }
+.subscribetext{
+    font-size: 12px;
+}
       
-    .subscribeform{
-        max-width: 50%;
-    }
+.subscribeform{
+    max-width: 50%;
+}
       
-    .subscribeinput{
-        padding: 10px 10px;
-        font-size: 12px;
-    }
+.subscribeinput{
+    padding: 10px 10px;
+    font-size: 12px;
+}
       
-    .subscribebutton{
-        padding: 10px 13px;
-        font-size: 12px;
-    }
+.subscribebutton{
+    padding: 10px 13px;
+    font-size: 12px;
+}
       
-    .footercolumns{
-        flex-wrap: wrap;
-        gap: 70px;
-        row-gap: 40px;
-    }
+.footercolumns{
+    flex-wrap: wrap;
+    gap: 70px;
+    row-gap: 40px;
+}
       
-    .footercolumn{
-        max-width: auto;
-        min-width: 148px;
-        flex: 1;
-    }
+.footercolumn{
+    max-width: auto;
+    min-width: 148px;
+     flex: 1;
+}
       
-    .footertitle{
-        font-size: 14px;
-    }
+.footertitle{
+    font-size: 14px;
+}
     
-    .footerlist li{
-        font-size: 12px;
-    }
+.footerlist li{
+     font-size: 12px;
+}
       
-    .footercontacts li{
-        font-size: 12px;
-    }
+.footercontacts li{
+    font-size: 12px;
+}
       
-    .footerbottom{
-        padding-left: 16px;
-        padding-right: 16px;
-        justify-content: space-between;
-        font-size: 12px;
-    }
+.footerbottom{
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: space-between;
+    font-size: 12px;
+}
       
-      .footersocials a{
-        font-size: 15px;
-    }
-    }
+.footersocials a{
+    font-size: 15px;
+}
+
+}
