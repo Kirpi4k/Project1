@@ -404,11 +404,13 @@ body{
   
 .card{
     background: rgba(255, 255, 255, 1);
-    width: 348px;
+    flex: 1 1 300px;
+    max-width: 348px;
     padding: 0;
     overflow: hidden;
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
     position: relative;
+    margin: 0 auto;
 }
   
 .card-image{
@@ -1080,7 +1082,8 @@ body{
 }
   
 .card{
-    width: 100%;
+    flex: 1 1 45%;
+    max-width: 100%;
 }
   
 .card-image{
@@ -1573,11 +1576,12 @@ body{
     text-align: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
 }
       
 .card{
-    width: 33%;
+    flex: 1 1 100%;
+    max-width: 50%;
     }
       
 .card-image{
@@ -1604,13 +1608,15 @@ body{
 }
       
 .icon-img{
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
+    padding: 5px;
 }
       
 .card-content{
     min-width: 100%;
+    padding: 20px;
 }
       
 .tag{
@@ -1619,11 +1625,12 @@ body{
       
 .rating{
     font-size: 10px;
+    padding: 4px;
 }
       
 .icon-star{
-    width: 10px;
-    height: 10px;
+    width: 13px;
+    height: 13px;
 }
       
 .card-content h3{
@@ -1671,10 +1678,13 @@ body{
       
 .testimonial-cards{
     gap: 10px;
+    gap: 30px;
 }
       
 .testimonial-card{
     max-width: 33%;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
       
@@ -1685,6 +1695,9 @@ body{
       
 .testimonial-text{
     font-size: 12px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
       
 .author img{
@@ -1719,12 +1732,14 @@ body{
 }
       
 .teamcard{
-    width: 35%; 
+    width: 35%;
+    height: 10%; 
 }
       
 .teamimage{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    height: 50%;
 }
       
 .teaminfo{
