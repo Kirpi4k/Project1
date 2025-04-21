@@ -107,6 +107,12 @@ body{
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.burger{
+    display: none;
+    height: 25px;
+    height: 25px;
+}
+
 .btn3:hover{
     background-color: rgba(220, 50, 40, 1);
     color:  rgba(250, 250, 250, 1);
@@ -134,7 +140,7 @@ body{
 }
   
 .left-text{
-    flex: 1 1 500px;
+    flex: 1 1 300px;
     max-width: 550px;
     z-index: 1;
     margin-top: 80px;
@@ -197,7 +203,8 @@ body{
 }
   
 .right-image-wrapper{
-    flex: 1 1 500px;
+    flex: 1 1 300px;
+    max-width: 500px;
     position: relative;
 }
   
@@ -210,8 +217,8 @@ body{
   
 .cards-on-image{
     position: absolute;
-    bottom: -80px;
-    transform: translateX(-50%);
+    bottom: -150px;
+    transform: translateX(-58%);
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -949,13 +956,9 @@ body{
     cursor: pointer;
 }
 
-.doctor-img{
-    max-width: 400px;
-    min-width: 280px;
-}
-
 .right-image-wrapper{
-    flex:1 1 10%;
+    position: relative;
+    top: 50px;
 }
 
 .cards-on-image{
@@ -1218,13 +1221,15 @@ body{
 }
   
 .teamcards{
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 20px;
 }
   
 .teamcard{
     border-radius: 10px;
     box-shadow: 0 13px 19px rgba(0, 0, 0, 0.07);
-    width: 25%; 
+    width: 33%; 
 }
   
 .teamimage{
@@ -1362,26 +1367,56 @@ body{
 .nav a{
     display: none;
 }
+
+.burger{
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.burgerline1{
+    background-color: rgba(255, 104, 91, 1);
+    height: 3px;
+    width: 25px;
+    margin-bottom: 6px;
+}
+
+.burgerline2{
+    background-color: rgba(255, 104, 91, 1);
+    height: 3px;
+    width: 25px;
+    margin-bottom: 6px;
+}
+
+.burgerline3{
+    background-color: rgba(255, 104, 91, 1);
+    height: 3px;
+    width: 25px;
+    margin-bottom: 6px;
+}
     
 .top-content{
     padding-top: 0;
+    padding-bottom: 0;  
     flex-direction: row;
     align-items: start;
-    padding-bottom: 0;
 }
     
 .btn2{
-    padding: 5px 10px;
-    font-size: 12px;
+    display: none;
 }
     
 .btn3{
-    padding: 5px 10px;
-    font-size: 12px;
+    display: none;
 }
     
 .left-text .label{
     font-size: 14px;
+}
+
+.left-text{
+    max-width: 100%;
 }
       
 .left-text h1{
@@ -1414,15 +1449,9 @@ body{
     cursor: pointer;
 }
     
-.doctor-img{
-    max-width: 300px;
-    min-width: 200px;
-}
-    
 .right-image-wrapper{
-    top: 50px;
-    flex: 1 1 1 1 auto;
-    margin: 0;
+    max-width: 100%;
+    margin-top: 30px;
 }
     
 .cards-on-image{
@@ -1468,6 +1497,8 @@ body{
     gap: 20px;
     padding-top: 80px;
     padding-bottom: 80px;
+    align-items: center;
+    justify-content: space-around;
 }
       
 .stat-item h2{
@@ -1479,6 +1510,7 @@ body{
 }
     
 .experts-wrapper{
+    margin: auto;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -1489,6 +1521,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: auto;
 }
       
 .experts-text h2{
@@ -1507,8 +1540,7 @@ body{
 .experts-image{
     flex: 1;
     text-align: center;
-    min-width: 200px;
-    max-width: 300px;
+    min-width: auto;
 }
       
 .experts-image img{
@@ -1538,8 +1570,9 @@ body{
     
 .cards-wrapper{
     flex-direction: row;
-    align-items: center;
     text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 10px;
 }
       
