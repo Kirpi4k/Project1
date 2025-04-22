@@ -217,7 +217,7 @@ body{
   
 .cards-on-image{
     position: absolute;
-    bottom: -150px;
+    bottom: -160px;
     transform: translateX(-58%);
     display: flex;
     gap: 30px;
@@ -477,7 +477,10 @@ body{
     top: 20px;
     right: 20px;
     background: rgba(38, 51, 93, 1);
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
     border-radius: 20px;
     font-size: 12px;
     font-weight: 400;
@@ -943,7 +946,7 @@ body{
 }
 
 .primary-btn{
-    padding: 5px 15px;
+    padding: 15px 15px;
     border-radius: 5px;
     font-weight: 700;
     font-size: 13px;
@@ -951,7 +954,7 @@ body{
 }
 
 .secondary-btn{
-    padding: 5px 15px;
+    padding: 15px 15px;
     border-radius: 5px;
     font-weight: 700;
     font-size: 13px;
@@ -1006,8 +1009,8 @@ body{
     flex-wrap: wrap;
     text-align: center;
     gap: 30px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
   
 .stat-item h2{
@@ -1056,6 +1059,11 @@ body{
 .experts-image img{
     max-width: 100%;
     height: auto;
+}
+
+.department{
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .department-header{
@@ -1159,6 +1167,11 @@ body{
     font-size: 13px;
 }
 
+.testimonial-section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 .testimonial-cards{
     flex-direction: row;
     align-items: center;
@@ -1224,9 +1237,10 @@ body{
 }
   
 .teamcards{
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    row-gap: 20px;
+    column-gap: 20px;
 }
   
 .teamcard{
@@ -1263,7 +1277,7 @@ body{
 }
 
 .subscribe{
-    padding: 160px 0;
+    padding: 80px 0;
     background-color: rgba(255, 255, 255, 1);
     text-align: center;
 }
@@ -1625,7 +1639,10 @@ body{
       
 .rating{
     font-size: 10px;
-    padding: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
       
 .icon-star{
@@ -1796,8 +1813,8 @@ body{
       
 .footercolumns{
     flex-wrap: wrap;
-    gap: 70px;
-    row-gap: 40px;
+    gap: 20px;
+    row-gap: 20px;
 }
       
 .footercolumn{
